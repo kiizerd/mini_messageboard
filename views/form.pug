@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  <form method="POST" action="/new" class='ui form container'>
+    h3.ui Create New Message
+    div.field
+      input(
+        type='text'
+        name='user'
+        placeholder='Enter your name..'
+      )
+    div.field
+      textarea(
+        rows='7'
+        type='text'
+        name='message'
+        placeholder='Enter your message..'
+      )
+    button.ui.button(type='submit') Submit
+  </form>
